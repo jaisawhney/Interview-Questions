@@ -7,7 +7,6 @@
 # INPUT: int
 # OUTPUT: bool
 
-
 '''
 Convert int to a string
 Reverse string and compare if they are equal
@@ -32,7 +31,7 @@ class Solution:
 # OUTPUT: bool
 
 '''
-Declare an integer to store the reverse
+Declare an integer to store the reverse digits
 Add the numbers in reverse to the variable
 Compare the reversed number to the original and return the result
 '''
@@ -47,11 +46,11 @@ class Solution:
             # Get the last digit
             last_digit = x % 10
 
-            # Remove the last digit
+            # Remove the last digit from the original
             x = x // 10
 
-            # Add the last digit to the list
+            # Add the last digit to the reverse number
             rev_num = rev_num * 10 + last_digit
 
-        # Checks if the reverse is equal to the original
+        # Check if the original is equal to the reverse
         return orig_num == rev_num
